@@ -4,6 +4,7 @@ import { Redis } from 'ioredis'
 import cors from 'cors'
 import helmet from 'helmet';
 import identityRoutes from './routes/identityRoutes.ts'
+import bookRoutes from './routes/bookRoutes.ts'
 
 
 
@@ -36,6 +37,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 })
 
 app.use('/auth', identityRoutes)
+app.use('/books', bookRoutes)
 
 const PORT =  process.env.port as string;
 

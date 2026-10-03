@@ -18,7 +18,7 @@ const fileFilter = (req: Request,
   if(file.mimetype.startsWith('image/')) {
     cb(null, true)
   } else {
-    cb(null, false)
+    cb(new Error('Invalid file type'))
   }
 }
  const upload = multer({

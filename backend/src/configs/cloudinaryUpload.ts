@@ -12,3 +12,5 @@ const uploadToCloudinary = async (file: string) => {
 
 
 }
+
+export default uploadToCloudinary
