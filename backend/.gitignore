@@ -1,2 +1,48 @@
-node_modules
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Environment variables (keep secrets out of git)
 .env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Runtime / temp
+tmp/
+temp/
+.cache/
+*.pid
+
+# Uploads (local files before/instead of Cloudinary)
+uploads/
+
+# Testing / coverage
+coverage/
+.nyc_output/
+
+# Editor / IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# SSH / keys (just in case)
+*.pem
+*.key
