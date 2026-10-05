@@ -1,9 +1,9 @@
-import type { Redis } from "ioredis"; // or: import type { RedisClientType } from "redis";
+import type { Redis } from "ioredis";
 
 declare global {
   namespace Express {
     interface Request {
-      redisClient: Redis; // no "?" so it's not optional
+      redisClient: Redis;
     }
   }
 }
